@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>fiz-mat</title>
+
+	
+
+<style >
+.opr
+{
+	
+	text-align: left;
+		width: 50%;
+		border: 2px solid  #333;
+				border-radius: 10px;
+}
+	.opredel
+	{
+
+		text-align: left;
+
+		width: 50%;
+		border: 2px solid  #333;
+		background-color:#EEE8AA;
+		border-radius: 10px;
+	}
+	
+
+.silki1
+	{
+		opacity: 0.8;
+		left: 20px;
+		font-family: Comic Sans MS;
+		top: 0.5%;
+		width: 1550px;
+		height: 90px;
+		border: 4px solid #333;
+		border-radius: 10px;
+		background:#EEE8AA;
+
+		position: fixed;
+
+
+	}
+
+   .mat {
+  
+   
+
+	color: #000000;
+
+font-family:Comic Sans MS ;
+  text-align:  center;
+  </style>
+ <style>
+ .block
+
+
+ /*блок*/
+ 	{   overflow: scroll;
+ 		opacity: 0.8;
+ 		
+ 		font-family: Comic Sans MS;
+ 		line-height: 30px;
+ 		   text-indent: 20px;
+ 		  
+ 		   font-size: 110%;
+ 		   
+ 		    position: fixed; 
+    left: 20px; 
+    top: 15%;
+    padding: 10px; 
+    background:#EEE8AA;
+    border: 5px solid #333; 
+    height: 79%;
+    width: 1200px;
+     border-radius: 10px;
+    color: #2F4F4F;
+}
+ 
+  .silki
+  {      
+    overflow: scroll;
+  	opacity: 0.8;
+  	font-family: Comic Sans MS;
+  	text-align: right;
+  	position: fixed;
+  right: 20px;
+  top:15%;
+  padding: 10px;
+   background:#EEE8AA;
+   border-radius: 10px;
+   height: 79%;
+   width: 275px;
+   border: 5px solid #333; 
+
+color: #000000;
+}
+</style>
+
+</head>
+<body background="5994754e649c315debea3a4c.jpg">
+	<script src="jquery-1.7.1.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+    $("a").click(function () {
+        var elementClick = $(this).attr("href");
+        var destination = $(elementClick).offset().top;
+        if ($.browser.safari) {
+            $('body').animate({ scrollTop: destination }, 1100); //1100 - скорость прокрутки
+        } else {
+            $('html').animate({ scrollTop: destination }, 1100);
+        }
+        return false; 
+    });
+});
+
+</script>
+
+<body>
+
+<a href="#botDiv"></a>
+<div id="topDiv"></div>
+
+
+	
+
+	<div class="silki1">
+		<div class="mat">
+	
+<b><p><h1>Теорема Пифагора</h1></p></b>
+
+</div>
+    
+</div>
+
+<div class="block">
+	
+		
+    <p><h3><b>Квадрат гипотенузы равен сумме квадратов катетов.</b></h3></p>
+
+ <h3>
+ Основное тригонометрическое тождество:〖sin〗^2+〖cos〗^2=1.
+Допустим есть треугольник со сторонами a,b,c и углом А. Где a,b- катеты,с-гипотенуза
+<p>sinA=a/c;
+cosA=b/c;</p>
+Следовательно:
+〖sin〗^2+〖cos〗^2= a^2/c^2 + b^2/c^2 = (a^2 + b^2)/c^2 =1;
+<div class="opr">
+<p>a^2 + b^2 = c^2.  (^2- вторая степень)</p>
+</div>
+<p>Теорему Пифагора используют в множествах геометрических задач, и не только.
+Например в доказательстве <a href="прямая.html">уравнения прямой.</a>
+Важнейшее применение теоремы Пифагора — определение расстояния между двумя точками в прямоугольной системе координат.
+Пройти тест на тему теорема Пифагора можно <a href="тест.html">тут.</a>
+<hr>
+Калькулятор т. Пифагора  <a href="калька.html">тут.</a>
+</h3>
+    </div>
+	<div class="silki">
+		<h2><p>Ссылки на другие темы</p>
+		<p><a href="1.html">Теорема Пифагора</p></a>
+	<p><a href="прямая.html">Уравнение прямой</p></a>
+	<p><a href="элипс.html">Эллипс</a></p>
+        <p><a href="sin.html">Триганометрические функции</a></p>
+        </h2>
+
+	</div>
+
+</body>
+</html>
